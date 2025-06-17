@@ -28,6 +28,7 @@ Ready to build your first AI agent? Start with our [Quick Start Guide](getting-s
 1. [**Installation**](getting-started/installation.md) - Set up MindedJS in your project
 2. [**Quick Start**](getting-started/quick-start.md) - Build your first refund processing agent
 3. [**Core Concepts**](core-concepts/flows.md) - Understand flows, nodes, edges, and memory
+4. [**Your First Eval**](getting-started/your-first-eval.md) - Solve your first eval
 
 ### Key Concepts
 
@@ -35,7 +36,7 @@ Ready to build your first AI agent? Start with our [Quick Start Guide](getting-s
 * [**Nodes**](core-concepts/nodes.md) - Processing units (triggers, prompts, tools, junctions)
 * [**Edges**](core-concepts/edges.md) - Routing logic between nodes
 * [**Tools**](core-concepts/tools.md) - Strongly-typed functions for LLMs to call
-* [**Memory**](core-concepts/memory-types.md) - Type-safe state management across your flow
+* [**Memory**](core-concepts/memory.md) - Type-safe state management across your flow
 
 ***
 
