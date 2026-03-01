@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.42] - 2026-03-01
+
+### Fixed
+
+- **Validate Command**: Removed unnecessary logs from validate command.
+
 ## [3.1.41] - 2026-02-26
 
 ### Added
