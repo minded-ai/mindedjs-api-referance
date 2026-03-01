@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.43] - 2026-03-01
+
+### Fixed
+
+- **Browser Task Environment Variables**: Fixed issue where `AWS_REGION` and `AWS_BUCKET` environment variables were being hidden from browserTask nodes that need them.
+
 ## [3.1.42] - 2026-03-01
 
 ### Fixed
