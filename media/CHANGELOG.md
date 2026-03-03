@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.45] - 2026-03-03
+
+### Fixed
+
+- **Placeholders**: Fixed placeholder replacement inside escaped JSON tool parameters (supports nested `trigger.*`, `state.memory.*`, and `tools.*` paths).
+
 ## [3.1.44] - 2026-03-03
 
 ### Added
