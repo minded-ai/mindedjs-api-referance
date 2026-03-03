@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.44] - 2026-03-03
+
+### Added
+
+- **Tool Parameters**: Added retry logic for tool parameters inference.
+
 ## [3.1.43] - 2026-03-01
 
 ### Fixed
