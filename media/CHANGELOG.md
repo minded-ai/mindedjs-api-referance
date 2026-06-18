@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.46] - 2026-06-18
+
+### Fixed
+
+- **Browser Task**: Add session persistence for RPA.
+
 ## [3.1.45] - 2026-03-03
 
 ### Fixed
