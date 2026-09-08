@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.48] - 2026-09-08
+
+### Fixed
+
+- **Publish**: Pin npm 11 in the CD job. `npm@latest` is now 12 and requires Node 22+, which broke trusted publishing on Node 20 and left 3.1.47 unpublished.
+
 ## [3.1.47] - 2026-09-08
 
 ### Added
