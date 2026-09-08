@@ -2,6 +2,16 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.47] - 2026-09-08
+
+### Added
+
+- **RPA Proxy Env**: `BROWSER_PROXY_*` environment variables now configure a default proxy (`minded` trusted-ip/region or `custom`) when a tool or browser-task node omits `proxyConfig`.
+
+### Fixed
+
+- **Prompt Node RPA**: Prompt-node, YAML tool-run, and standalone RPA execution now use the tool's `browserTaskMode` and `proxyConfig` (falling back to env) instead of env-only settings. Prompt-node RPA no longer pre-creates a second browser session, so live view stays on `withBrowserSession`.
+
 ## [3.1.46] - 2026-06-18
 
 ### Fixed
