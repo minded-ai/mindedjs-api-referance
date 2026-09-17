@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.49] - 2026-09-16
+
+### Added
+
+- **Distributed Lock**: `toolsLibrary.lock` exposes `acquireLock`, `releaseLock`, and `withLock` for an agent-scoped Redis lock. Use it to serialize shared 2FA / TOTP logins across parallel sessions. Waiters poll until the lock is free; Redis unavailability fails closed; TTL releases a crashed holder.
+
 ## [3.1.48] - 2026-09-08
 
 ### Fixed
