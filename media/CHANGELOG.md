@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.50] - 2026-09-27
+
+### Added
+
+- **GPT-6 Responses API**: `MindedChatOpenAI` calls the Responses API for model ids that start with `gpt-6`. Prompt routing and replies sent to the user read the text out of content blocks.
+
 ## [3.1.49] - 2026-09-16
 
 ### Added
