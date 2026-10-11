@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.51] - 2026-10-11
+
+### Fixed
+
+- **GPT-6 prompt caching**: the system prompt's leading text that is identical for every conversation (playbooks, node prompt up to the first variable) is sent as its own content block with an explicit cache breakpoint on gpt-6 models, so later turns of any conversation on that node read it from the cache instead of paying full price and a cache write on every turn.
+
 ## [3.1.50] - 2026-09-27
 
 ### Added
