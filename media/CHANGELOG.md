@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.53] - 2026-11-02
+
+### Fixed
+
+- **Mixed gpt-6 models in one conversation**: `MindedChatOpenAI` drops the Responses API `reasoning` items that a different model family produced before each call. Azure decrypts a reasoning item only on the Azure resource that created it, and gpt-6.1-terra lives on a different resource than the other gpt-6 models, so an agent that pinned some nodes to terra while the org default stayed luna failed with `400 The encrypted content for item rs_… could not be verified`. Same-model reasoning is still replayed.
+
 ## [3.1.52] - 2026-11-02
 
 ### Fixed
