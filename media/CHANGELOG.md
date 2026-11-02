@@ -2,6 +2,13 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.52] - 2026-11-02
+
+### Fixed
+
+- **GPT-6 prompt caching**: playbooks whose text compiles per turn (a date, a memory value) now join after the unchanging ones, so the explicit cache breakpoint covers every static playbook instead of stopping at the first placeholder of the joined block.
+- **Prompt routing**: the routing prompt takes the last ten conversation messages only. In conversations of ten messages or fewer the slice carried the system prompt, so every routing step re-sent the whole playbook block uncached.
+
 ## [3.1.51] - 2026-10-11
 
 ### Fixed
