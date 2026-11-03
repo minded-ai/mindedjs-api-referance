@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.54] - 2026-11-03
+
+### Fixed
+
+- **Tool calls on agents that resolve `@langchain/openai` 0.5**: `MindedChatOpenAI.withConfig()` (3.1.53) rebuilt the model from `fields`, which 0.5 does not keep, so `bindTools()` sent `gpt-3.5-turbo` to chat completions without the tools and the gateway answered `400 "Invalid model"` on every node that has tools. It now rebuilds only when `@langchain/openai` itself returns a plain `ChatOpenAI` (0.6+); on 0.5 it keeps the binding to this instance.
+
 ## [3.1.53] - 2026-11-02
 
 ### Fixed
