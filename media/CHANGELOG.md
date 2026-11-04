@@ -2,6 +2,12 @@
 
 All notable changes to MindedJS will be documented in this file.
 
+## [3.1.55] - 2026-11-04
+
+### Fixed
+
+- **Mixed-model Responses history**: after dropping another model family's reasoning, also remove its provider item IDs and pair any remapped function/custom-tool call IDs with their tool results. Full native visible output, annotations and prompt-cache blocks are retained. Same-family and unknown-producer history remains unchanged. Unresolved foreign item references and hosted-tool items without a supported portable representation fail explicitly instead of emitting invalid requests. This extends the 3.1.54 compatibility fix without changing its `bindTools()` behavior.
+
 ## [3.1.54] - 2026-11-03
 
 ### Fixed
